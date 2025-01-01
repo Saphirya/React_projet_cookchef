@@ -1,5 +1,5 @@
 function Content() {
-  return <div>Content</div>;
+  return <h1 className="flex-fill b3">Content</h1>;
 }
 
 export default Content;
