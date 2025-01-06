@@ -1,5 +1,5 @@
+import recipe from "../../public/assets/images/saumonasperge.jpg";
 import styles from "./Recipe.module.scss";
-import recipe from "../assets/images/recette.jpg";
 
 function Recipe() {
   return (
