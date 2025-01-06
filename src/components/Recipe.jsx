@@ -1,16 +1,16 @@
-import recipe from "../../public/assets/images/saumonasperge.jpg";
 import styles from "./Recipe.module.scss";
 
-function Recipe() {
+function Recipe({ title, image }) {
   return (
     <div className={styles.recipe}>
       <div className={styles.imageContainer}>
-        <img src={recipe} alt="recipe" />
+        <img src={image} alt="recipe" />
       </div>
       <div
-        className={`${styles.recipeTitle} d-flex flex-row justify-content-center align-items-center`}
+        className={`${styles.recipeTitle} d-flex flex-column justify-content-center align-items-center`}
       >
-        <h3>Saumon et asperges</h3>
+        <h3 className="mb-10">{title}</h3>
+        <i className="fa-solid fa-heart"></i>
       </div>
     </div>
   );
