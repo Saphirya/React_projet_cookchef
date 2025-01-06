@@ -1,0 +1,13 @@
+@mixin xs {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@use "./" as mixin;
+
+.card {
+  @include mixin.xs {
+    color: blue;
+  }
+}
